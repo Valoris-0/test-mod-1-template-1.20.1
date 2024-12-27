@@ -16,6 +16,12 @@ public class ModBlocks {
     public static final Block RUBY_BLOCK = registerBlock("ruby_block",
             new Block(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK).sounds(BlockSoundGroup.AMETHYST_BLOCK)));
 
+    public static final Block RAW_RUBY_BLOCK = registerBlock("raw_ruby_block",
+            new Block(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK)));
+
+    public static final Block FROZEN_OAK_LOG = registerBlock("frozen_oak_log",
+            new Block(FabricBlockSettings.copyOf(Blocks.OAK_LOG).sounds(BlockSoundGroup.GLASS)));
+
     private static Block registerBlock(String name, Block block) {
         registerBlockItem(name, block);
         return Registry.register(Registries.BLOCK, new Identifier(TutorialMod.MOD_ID, name), block);
