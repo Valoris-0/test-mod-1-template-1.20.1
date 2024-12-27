@@ -14,7 +14,6 @@ public class ModItems {
     public static final Item RUBY = registerItem("ruby", new Item(new FabricItemSettings()));
     public static final Item RAW_RUBY = registerItem("raw_ruby", new Item(new FabricItemSettings()));
     public static final Item RAW_DIAMOND = registerItem("raw_diamond", new Item(new FabricItemSettings()));
-    public static final Item FROZEN_OAK_LOG = registerItem("frozen_oak_log", new Item(new FabricItemSettings()));
 
     private static void addItemsToIngredientItemGroup(FabricItemGroupEntries entries) {
         entries.add(RUBY);
