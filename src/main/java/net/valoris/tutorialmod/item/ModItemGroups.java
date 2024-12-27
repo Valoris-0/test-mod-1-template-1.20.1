@@ -31,7 +31,7 @@ public class ModItemGroups {
     public static final ItemGroup CUSTOM_LOGS = Registry.register(Registries.ITEM_GROUP,
             new Identifier(TutorialMod.MOD_ID, "logs"),
             FabricItemGroup.builder().displayName(Text.translatable("itemgroup.logs"))
-                    .icon(() -> new ItemStack(ModBlocks.FROZEN_OAK_LOG)).entries((displayContext, entries) -> {
+                    .icon(() -> new ItemStack(ModItems.FROZEN_OAK_LOG)).entries((displayContext, entries) -> {
 
                         entries.add(ModBlocks.FROZEN_OAK_LOG);
 
