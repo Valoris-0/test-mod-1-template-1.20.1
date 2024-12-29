@@ -1,6 +1,6 @@
 {
   "type": "minecraft:crafting_shapeless",
-  "categorie": "building",
+  "categorie": "misc",
   "ingredients": [
     {
       "item": "tutorialmod:ruby_block"

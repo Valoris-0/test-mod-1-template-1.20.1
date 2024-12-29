@@ -24,7 +24,7 @@
                   }
                 }
               ],
-              "name": "tutorialmod:ruby_ore"
+              "name": "tutorialmod:deepslate_ruby_ore"
             },
             {
               "type": "minecraft:item",
@@ -33,7 +33,7 @@
                   "add": false,
                   "count": {
                     "type": "minecraft:uniform",
-                    "max": 3.0,
+                    "max": 4.0,
                     "min": 1.0
                   },
                   "function": "minecraft:set_count"
@@ -55,5 +55,5 @@
       "rolls": 1.0
     }
   ],
-  "random_sequence": "tutorialmod:blocks/ruby_ore"
+  "random_sequence": "tutorialmod:blocks/deepslate_ruby_ore"
 }

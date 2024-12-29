@@ -1,7 +1,7 @@
 {
-  "type": "minecraft:blasting",
+  "type": "minecraft:smelting",
   "categorie": "misc",
-  "cookingtime": 100,
+  "cookingtime": 200,
   "experience": 2,
   "group": "diamond",
   "ingredient": {
