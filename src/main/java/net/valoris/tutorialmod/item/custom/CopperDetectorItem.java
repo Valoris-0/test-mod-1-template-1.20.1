@@ -6,13 +6,12 @@ import net.minecraft.block.Blocks;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemUsageContext;
-import net.minecraft.server.network.ServerPlayerEntity;
 import net.minecraft.text.Text;
 import net.minecraft.util.ActionResult;
 import net.minecraft.util.math.BlockPos;
 
-public class DiamondDetectorItem extends Item {
-    public DiamondDetectorItem(Settings settings) {
+public class CopperDetectorItem extends Item {
+    public CopperDetectorItem(Settings settings) {
         super(settings);
     }
 
@@ -29,8 +28,6 @@ public class DiamondDetectorItem extends Item {
                 if(isValuableBlock(state)) {
                     ouputValuableCoordinates(positionClicked.down(i), player, state.getBlock());
                     foundBlock = true;
-
-                    break;
                 }
             }
 
@@ -51,6 +48,6 @@ public class DiamondDetectorItem extends Item {
     }
 
     private boolean isValuableBlock(BlockState state) {
-        return state.isOf(Blocks.DIAMOND_ORE) || state.isOf(Blocks.DEEPSLATE_DIAMOND_ORE);
+        return state.isOf(Blocks.COPPER_ORE) || state.isOf(Blocks.DEEPSLATE_COPPER_ORE) || state.isOf(Blocks.RAW_COPPER_BLOCK);
     }
 }

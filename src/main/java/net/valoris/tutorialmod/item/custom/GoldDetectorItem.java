@@ -10,8 +10,8 @@ import net.minecraft.text.Text;
 import net.minecraft.util.ActionResult;
 import net.minecraft.util.math.BlockPos;
 
-public class LapisDetectorItem extends Item {
-    public LapisDetectorItem(Settings settings) {
+public class GoldDetectorItem extends Item {
+    public GoldDetectorItem(Settings settings) {
         super(settings);
     }
 
@@ -28,8 +28,6 @@ public class LapisDetectorItem extends Item {
                 if(isValuableBlock(state)) {
                     ouputValuableCoordinates(positionClicked.down(i), player, state.getBlock());
                     foundBlock = true;
-
-                    break;
                 }
             }
 
@@ -50,6 +48,6 @@ public class LapisDetectorItem extends Item {
     }
 
     private boolean isValuableBlock(BlockState state) {
-        return state.isOf(Blocks.DIAMOND_ORE) || state.isOf(Blocks.DEEPSLATE_DIAMOND_ORE);
+        return state.isOf(Blocks.GOLD_ORE) || state.isOf(Blocks.DEEPSLATE_GOLD_ORE) || state.isOf(Blocks.RAW_GOLD_BLOCK);
     }
 }

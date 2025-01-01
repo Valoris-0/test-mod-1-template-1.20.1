@@ -10,8 +10,8 @@ import net.minecraft.text.Text;
 import net.minecraft.util.ActionResult;
 import net.minecraft.util.math.BlockPos;
 
-public class LapisDetectorItem extends Item {
-    public LapisDetectorItem(Settings settings) {
+public class EmeraldDetectorItem extends Item {
+    public EmeraldDetectorItem(Settings settings) {
         super(settings);
     }
 
@@ -22,14 +22,17 @@ public class LapisDetectorItem extends Item {
             PlayerEntity player = context.getPlayer();
             boolean foundBlock = false;
 
-            for (int i = 0; i <= positionClicked.getY() + 64; i++) {
-                BlockState state = context.getWorld().getBlockState(positionClicked.down(i));
+            for (int x = -5; x <= 5; x++) {
+                for (int z = -5; z <= 5; z++) {
+                    for (int y = positionClicked.getY(); y >= -64; y--) {
+                        BlockPos blockPos = new BlockPos(positionClicked.getX() + x, y, positionClicked.getZ() + z);
+                        BlockState state = context.getWorld().getBlockState(blockPos);
 
-                if(isValuableBlock(state)) {
-                    ouputValuableCoordinates(positionClicked.down(i), player, state.getBlock());
-                    foundBlock = true;
-
-                    break;
+                        if(isValuableBlock(state)) {
+                            ouputValuableCoordinates(blockPos, player, state.getBlock());
+                            foundBlock = true;
+                        }
+                    }
                 }
             }
 
@@ -50,6 +53,6 @@ public class LapisDetectorItem extends Item {
     }
 
     private boolean isValuableBlock(BlockState state) {
-        return state.isOf(Blocks.DIAMOND_ORE) || state.isOf(Blocks.DEEPSLATE_DIAMOND_ORE);
+        return state.isOf(Blocks.EMERALD_ORE) || state.isOf(Blocks.DEEPSLATE_EMERALD_ORE);
     }
 }

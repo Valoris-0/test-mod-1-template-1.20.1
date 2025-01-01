@@ -10,8 +10,8 @@ import net.minecraft.text.Text;
 import net.minecraft.util.ActionResult;
 import net.minecraft.util.math.BlockPos;
 
-public class RedstoneDetectorItem extends Item {
-    public RedstoneDetectorItem(Settings settings) {
+public class CoalDetectorItem extends Item {
+    public CoalDetectorItem(Settings settings) {
         super(settings);
     }
 
@@ -48,6 +48,6 @@ public class RedstoneDetectorItem extends Item {
     }
 
     private boolean isValuableBlock(BlockState state) {
-        return state.isOf(Blocks.REDSTONE_ORE) || state.isOf(Blocks.DEEPSLATE_REDSTONE_ORE);
+        return state.isOf(Blocks.COAL_ORE) || state.isOf(Blocks.DEEPSLATE_COAL_ORE);
     }
 }

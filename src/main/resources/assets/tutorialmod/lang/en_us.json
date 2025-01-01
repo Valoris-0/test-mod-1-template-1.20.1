@@ -11,9 +11,25 @@
   "block.tutorialmod.nether_ruby_ore": "Nether Ruby Ore",
   "block.tutorialmod.end_stone_ruby_ore": "End Stone Ruby Ore",
 
+  "block.tutorialmod.sound_block": "Sound Block",
+
   "itemgroup.ruby": "Ruby Group",
 
   "block.tutorialmod.frozen_oak_log": "Frozen Oak Log",
 
-  "itemgroup.logs": "Custom Logs"
+  "itemgroup.logs": "Custom Logs",
+
+  "item.tutorialmod.metal_detector": "Iron Detector",
+  "item.tutorialmod.diamond_detector": "Diamond Detector",
+  "item.tutorialmod.copper_detector": "Copper Detector",
+  "item.tutorialmod.gold_detector": "Gold Detector",
+  "item.tutorialmod.lapis_detector": "Lapis lazuli Detector",
+  "item.tutorialmod.emerald_detector": "Emerald Detector",
+  "item.tutorialmod.redstone_detector": "Redstone Detector",
+  "item.tutorialmod.coal_detector": "Coal Detector",
+  "item.tutorialmod.quartz_detector": "Quartz Detector",
+  "item.tutorialmod.nether_detector": "Nether Gold Detector",
+  "item.tutorialmod.netherite_detector": "Ancient Debris Detector",
+
+  "itemgroup.detectors": "Ore Detectors"
 }

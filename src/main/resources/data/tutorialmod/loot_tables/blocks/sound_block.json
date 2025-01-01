@@ -11,7 +11,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "tutorialmod:raw_ruby_block"
+          "name": "tutorialmod:sound_block"
         }
       ],
       "rolls": 1.0

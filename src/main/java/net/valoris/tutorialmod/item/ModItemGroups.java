@@ -21,9 +21,6 @@ public class ModItemGroups {
                         entries.add(ModItems.RUBY);
                         entries.add(ModItems.RAW_RUBY);
 
-                        entries.add(ModItems.RAW_DIAMOND);
-                        entries.add(Items.DIAMOND);
-
                         entries.add(ModBlocks.RUBY_BLOCK);
                         entries.add(ModBlocks.RAW_RUBY_BLOCK);
 
@@ -31,6 +28,11 @@ public class ModItemGroups {
                         entries.add(ModBlocks.DEEPSLATE_RUBY_ORE);
                         entries.add(ModBlocks.NETHER_RUBY_ORE);
                         entries.add(ModBlocks.END_STONE_RUBY_ORE);
+
+                        entries.add(ModItems.RAW_DIAMOND);
+                        entries.add(Items.DIAMOND);
+
+                        entries.add(ModBlocks.SOUND_BLOCK);
 
                     }).build());
 
@@ -41,6 +43,25 @@ public class ModItemGroups {
                     .icon(() -> new ItemStack(ModBlocks.FROZEN_OAK_LOG)).entries((displayContext, entries) -> {
 
                         entries.add(ModBlocks.FROZEN_OAK_LOG);
+
+                    }).build());
+
+    public static final ItemGroup ORE_DETECTORS = Registry.register(Registries.ITEM_GROUP,
+            new Identifier(TutorialMod.MOD_ID, "detectors"),
+            FabricItemGroup.builder().displayName(Text.translatable("itemgroup.detectors"))
+                    .icon(() -> new ItemStack(ModItems.METAL_DETECTOR)).entries((displayContext, entries) -> {
+
+                        entries.add(ModItems.COAL_DETECTOR);
+                        entries.add(ModItems.EMERALD_DETECTOR);
+                        entries.add(ModItems.LAPIS_DETECTOR);
+                        entries.add(ModItems.DIAMOND_DETECTOR);
+                        entries.add(ModItems.NETHERITE_DETECTOR);
+                        entries.add(ModItems.QUARTZ_DETECTOR);
+                        entries.add(ModItems.METAL_DETECTOR);
+                        entries.add(ModItems.COPPER_DETECTOR);
+                        entries.add(ModItems.NETHER_DETECTOR);
+                        entries.add(ModItems.GOLD_DETECTOR);
+                        entries.add(ModItems.REDSTONE_DETECTOR);
 
                     }).build());
 

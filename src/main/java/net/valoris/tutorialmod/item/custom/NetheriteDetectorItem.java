@@ -10,25 +10,29 @@ import net.minecraft.text.Text;
 import net.minecraft.util.ActionResult;
 import net.minecraft.util.math.BlockPos;
 
-public class EmeraldDetectorItem extends Item {
-    public EmeraldDetectorItem(Settings settings) {
+public class NetheriteDetectorItem extends Item {
+    public NetheriteDetectorItem(Settings settings) {
         super(settings);
     }
 
     @Override
     public ActionResult useOnBlock(ItemUsageContext context) {
-        if(!context.getWorld().isClient()) {
+        if (!context.getWorld().isClient()) {
             BlockPos positionClicked = context.getBlockPos();
             PlayerEntity player = context.getPlayer();
             boolean foundBlock = false;
 
-            for (int x = -5; x <= 5; x++) {
-                for (int z = -5; z <= 5; z++) {
+            // Calculate the chunk boundaries
+            int chunkXStart = (positionClicked.getX() >> 4) << 4;
+            int chunkZStart = (positionClicked.getZ() >> 4) << 4;
+
+            for (int x = 0; x < 16; x++) {
+                for (int z = 0; z < 16; z++) {
                     for (int y = positionClicked.getY(); y >= -64; y--) {
-                        BlockPos blockPos = new BlockPos(positionClicked.getX() + x, y, positionClicked.getZ() + z);
+                        BlockPos blockPos = new BlockPos(chunkXStart + x, y, chunkZStart + z);
                         BlockState state = context.getWorld().getBlockState(blockPos);
 
-                        if(isValuableBlock(state)) {
+                        if (isValuableBlock(state)) {
                             ouputValuableCoordinates(blockPos, player, state.getBlock());
                             foundBlock = true;
                         }
@@ -36,7 +40,7 @@ public class EmeraldDetectorItem extends Item {
                 }
             }
 
-            if(!foundBlock) {
+            if (!foundBlock) {
                 player.sendMessage(Text.literal("No Valuables Found!"));
             }
         }
@@ -53,6 +57,6 @@ public class EmeraldDetectorItem extends Item {
     }
 
     private boolean isValuableBlock(BlockState state) {
-        return state.isOf(Blocks.EMERALD_ORE) || state.isOf(Blocks.DEEPSLATE_EMERALD_ORE);
+        return state.isOf(Blocks.ANCIENT_DEBRIS);
     }
 }
