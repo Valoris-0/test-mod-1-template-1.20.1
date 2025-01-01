@@ -1,6 +1,6 @@
 {
   "type": "minecraft:crafting_shaped",
-  "categorie": "building",
+  "categorie": "building_blocks",
   "pattern": [
     "###",
     "###",
@@ -8,10 +8,10 @@
   ],
   "key": {
     "#": {
-      "item": "tutorialmod:raw_ruby"
+      "item": "tutorialmod:ruby"
     }
   },
   "result": {
-    "item": "tutorialmod:raw_ruby_block"
+    "item": "tutorialmod:ruby_block"
   }
 }

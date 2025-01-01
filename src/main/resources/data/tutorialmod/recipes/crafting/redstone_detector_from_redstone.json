@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "categorie": "misc",
+  "pattern": [
+    "#  ",
+    " # ",
+    " RR"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:stick"
+    },
+    "R": {
+      "item": "minecraft:redstone_block"
+    }
+  },
+  "result": {
+    "item": "tutorialmod:redstone_detector"
+  }
+}

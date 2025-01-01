@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "categorie": "misc",
+  "pattern": [
+    "#  ",
+    " # ",
+    " GG"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:stick"
+    },
+    "G": {
+      "item": "minecraft:gold_ingot"
+    }
+  },
+  "result": {
+    "item": "tutorialmod:gold_detector"
+  }
+}

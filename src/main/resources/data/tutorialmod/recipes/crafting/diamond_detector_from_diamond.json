@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "categorie": "tools",
+  "pattern": [
+    "#  ",
+    " # ",
+    " DD"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:stick"
+    },
+    "D": {
+      "item": "minecraft:diamond"
+    }
+  },
+  "result": {
+    "item": "tutorialmod:diamond_detector"
+  }
+}

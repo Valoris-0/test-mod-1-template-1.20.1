@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "categorie": "misc",
+  "pattern": [
+    "#  ",
+    " # ",
+    " NN"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:stick"
+    },
+    "N": {
+      "item": "minecraft:nether_gold_ore"
+    }
+  },
+  "result": {
+    "item": "tutorialmod:nether_detector"
+  }
+}

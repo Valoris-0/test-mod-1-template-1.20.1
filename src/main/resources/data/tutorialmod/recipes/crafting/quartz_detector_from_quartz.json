@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "categorie": "misc",
+  "pattern": [
+    "#  ",
+    " # ",
+    " QQ"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:stick"
+    },
+    "Q": {
+      "item": "minecraft:quartz_block"
+    }
+  },
+  "result": {
+    "item": "tutorialmod:quartz_detector"
+  }
+}

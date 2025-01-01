@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "categorie": "misc",
+  "pattern": [
+    "#  ",
+    " # ",
+    " EE"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:stick"
+    },
+    "E": {
+      "item": "minecraft:emerald"
+    }
+  },
+  "result": {
+    "item": "tutorialmod:emerald_detector"
+  }
+}
