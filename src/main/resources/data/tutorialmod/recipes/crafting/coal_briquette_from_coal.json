@@ -1,13 +1,20 @@
 {
-  "type": "minecraft:crafting_shapeless",
-  "categorie": "misc",
-  "ingredients": [
-    {
-      "item": "tutorialmod:ruby_block"
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "minecraft:coal"
+    },
+    "Z": {
+      "item": "minecraft:charcoal"
     }
+  },
+  "pattern": [
+    "#Z",
+    "Z#"
   ],
   "result": {
-    "item": "tutorialmod:ruby",
-    "count": 9
+    "count": 4,
+    "item": "tutorialmod:coal_briquette"
   }
 }

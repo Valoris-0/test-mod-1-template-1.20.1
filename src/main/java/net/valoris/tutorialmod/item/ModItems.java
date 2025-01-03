@@ -12,8 +12,16 @@ import net.minecraft.util.Identifier;
 import net.valoris.tutorialmod.item.custom.*;
 
 public class ModItems {
-    public static final Item RUBY = registerItem("ruby", new Item(new FabricItemSettings()));
-    public static final Item RAW_RUBY = registerItem("raw_ruby", new Item(new FabricItemSettings()));
+    public static final Item RUBY = registerItem("ruby",
+            new Item(new FabricItemSettings()));
+    public static final Item RAW_RUBY = registerItem("raw_ruby",
+            new Item(new FabricItemSettings()));
+
+    public static final Item TOMATO = registerItem("tomato",
+            new Item(new FabricItemSettings().food(ModFoodComponents.Tomato)));
+
+    public static final Item COAL_BRIQUETTE = registerItem("coal_briquette",
+            new Item(new FabricItemSettings()));
 
     public static final Item METAL_DETECTOR = registerItem("metal_detector",
             new MetalDetectorItem(new FabricItemSettings().maxDamage(64)));
@@ -37,6 +45,9 @@ public class ModItems {
             new NetherDetectorItem(new FabricItemSettings().maxDamage(16)));
     public static final Item REDSTONE_DETECTOR = registerItem("redstone_detector",
             new RedstoneDetectorItem(new FabricItemSettings().maxDamage(24)));
+
+    public static final Item ULTIMATE_DETECTOR = registerItem("ultimate_detector",
+            new UltimateDetectorItem(new FabricItemSettings().maxDamage(64)));
 
     public static final Item RAW_DIAMOND = registerItem("raw_diamond", new Item(new FabricItemSettings()));
 

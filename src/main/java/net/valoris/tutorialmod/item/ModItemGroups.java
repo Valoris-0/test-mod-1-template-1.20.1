@@ -32,6 +32,10 @@ public class ModItemGroups {
                         entries.add(ModItems.RAW_DIAMOND);
                         entries.add(Items.DIAMOND);
 
+                        entries.add(ModItems.TOMATO);
+
+                        entries.add(ModItems.COAL_BRIQUETTE);
+
                         entries.add(ModBlocks.SOUND_BLOCK);
 
                     }).build());
@@ -62,6 +66,8 @@ public class ModItemGroups {
                         entries.add(ModItems.NETHER_DETECTOR);
                         entries.add(ModItems.GOLD_DETECTOR);
                         entries.add(ModItems.REDSTONE_DETECTOR);
+
+                        entries.add(ModItems.ULTIMATE_DETECTOR);
 
                     }).build());
 

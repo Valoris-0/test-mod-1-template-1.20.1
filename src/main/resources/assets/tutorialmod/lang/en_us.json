@@ -13,6 +13,12 @@
 
   "block.tutorialmod.sound_block": "Sound Block",
 
+  "item.tutorialmod.tomato": "Tomato",
+
+  "item.tutorialmod.coal_briquette": "Coal Briquette",
+
+  "tooltip.tutorialmod.sound_block.tooltip": "Makes a sweet sound when right clicked",
+
   "itemgroup.ruby": "Ruby Group",
 
   "block.tutorialmod.frozen_oak_log": "Frozen Oak Log",
@@ -30,6 +36,22 @@
   "item.tutorialmod.quartz_detector": "Quartz Detector",
   "item.tutorialmod.nether_detector": "Nether Gold Detector",
   "item.tutorialmod.netherite_detector": "Ancient Debris Detector",
+
+  "item.tutorialmod.ultimate_detector": "Ultimate Detector",
+
+  "tooltip.tutorialmod.metal_detector.tooltip": "Reveals the hidden veins of Iron, the backbone of every adventurer’s tools",
+  "tooltip.tutorialmod.diamond_detector.tooltip": "Unveils the rarest of gems, where brilliance meets strength",
+  "tooltip.tutorialmod.copper_detector.tooltip": "Sniffs out the gleaming copper, prized by those who craft and tinker",
+  "tooltip.tutorialmod.gold_detector.tooltip": "Guides you to the shimmering veins of Gold, coveted by kings and crafters alike",
+  "tooltip.tutorialmod.lapis_detector.tooltip": "Finds the deep azure glow of Lapis, a stone favored by those who seek arcane power",
+  "tooltip.tutorialmod.emerald_detector.tooltip": "Uncovers the radiant Emerald, a treasure sought by traders and nobles",
+  "tooltip.tutorialmod.redstone_detector.tooltip": "Tracks the pulsating glow of Redstone, a gift for those who master magic and machines",
+  "tooltip.tutorialmod.coal_detector.tooltip": "Reveals the dark, charred veins of Coal, the lifeblood of every furnace and torch",
+  "tooltip.tutorialmod.quartz_detector.tooltip": "Guides you to the gleaming Nether Quartz, a crystal with both beauty and utility",
+  "tooltip.tutorialmod.nether_detector.tooltip": "Finds the infernal Gold hidden deep within the Nether, a rare prize of the underworld",
+  "tooltip.tutorialmod.netherite_detector.tooltip": "Detects the ancient debris of the Nether in any chunk, forged into the strongest material known",
+
+  "tooltip.tutorialmod.ultimate_detector.tooltip": "Unveils every hidden ore, from the common to the rare, guiding you to treasures untold",
 
   "itemgroup.detectors": "Ore Detectors"
 }
